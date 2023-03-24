@@ -1,0 +1,31 @@
+{% extends 'e_comapp/base.html' %}
+
+
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6">
+
+        <di>
+            <img src="{{product.image}}"  width="500px"  height="500px" alt="">
+        </di>
+
+    </div>
+    <div class="col-md-6">
+        <div class="text-warning display- 3">
+            {{ product.title }}
+        </div>
+        <div class="text-danger">
+           price: {{ product.price }}
+        </div>
+        <div>
+            {{ product.description }}
+        </div>
+        <a href="#"><button class="btn-btn-sucesse">Acheter</button></a>
+
+    </div>
+
+</div>
+
+{% endblock %}
